@@ -21,7 +21,7 @@ function App() {
   },[posts]);                           // posts is dependency array 
 
   const fetchBotResponse = async () => {
-    const {data} = await axios.post("http://localhost:4000", {input}, {
+    const {data} = await axios.post("https://shy-lime-elk-vest.cyclic.cloud", {input}, {     // localhost:4000 ko idhar replace kra hai
       headers : {
         "Content-Type": "application/json", 
       }, 
